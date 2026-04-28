@@ -1,6 +1,6 @@
 # pixel-frame-film-fest
 Markup Languages project — CZU PEF 2026
-Project documentation for the **Markup Languages** course at Czech University of Life Sciences Prague (CZU PEF), 4th edition 2026.
+Project documentation for the **Markup Languages** course at Czech University of Life Sciences Prague (CZU PEF), 1st edition 2026.
 
 ## About the Festival
 
