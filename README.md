@@ -7,16 +7,16 @@ Project documentation for the **Markup Languages** course at Czech University of
 Pixel & Frame Film Fest is a fictional three-day international festival dedicated to modern cinema, digital creativity, 2D/3D animation, and immersive storytelling. The event takes place in **Prague, Czech Republic** from **September 10–12, 2026**, across two venues: Lumiere Main Cinema (800 seats) and Indie Projection Room (250 seats). The festival features 60 performers and 60 scheduled events.
 
 ## Project Structure
-/web                   ← Static HTML website (4 pages + CSS)
+/web                        ← Static HTML website (4 pages + CSS)
 /data
-festival.xml           ← Core data (60 performers, 60 events, 2 venues)
-festival.xsd           ← XSD validation schema with custom restrictions
+festival.xml              ← Core data (60 performers, 60 events, 2 venues)
+festival.xsd              ← XSD validation schema with custom restrictions
 /API
-openapi.yaml           ← REST API specification (OpenAPI 3.1)
-/transformation        ← 7 XSLT 3.0 stylesheets (XML → JSON)
-/json                  ← 7 sample JSON API responses
-/json-schema           ← 7 JSON Schema files (Draft 2020-12)
-specification.md       ← Festival concept specification
+openapi.yaml            ← REST API specification (OpenAPI 3.1)
+/transformation         ← 7 XSLT 3.0 stylesheets (XML → JSON)
+/json                   ← 7 sample JSON API responses
+/json-schema            ← 7 JSON Schema files (Draft 2020-12)
+specification.md            ← Festival concept specification
 
 ## API Endpoints
 
