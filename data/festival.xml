@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<festival xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="festival.xsd" id="PFFF2026" name="Pixel &amp; Frame Film Fest" edition="1" year="2026">
+    <location>
+        <city>Prague</city>
+        <country>Czech Republic</country>
+    </location>
+
+    <dateRange start="2026-09-10" end="2026-09-12"/>
+    <description>An international festival focused on modern cinema, digital creativity, and immersive storytelling.</description>
+    <tickets available="true" currency="EUR">
+        <startingPrice>25</startingPrice>
+    </tickets>
+    <links>
+        <website>https://pixelframefest.cz</website>
+    </links>
+
+    <venues>
+        <venue id="V1">
+            <name>Lumiere Main Cinema</name>
+            <capacity>800</capacity>
+            <type>Indoor Theater</type>
+        </venue>
+        <venue id="V2">
+            <name>Indie Projection Room</name>
+            <capacity>250</capacity>
+            <type>Workshop &amp; Screening Hall</type>
+        </venue>
+    </venues>
+
+    <performers>
+        <performer id="P01"><name>Elena Rostova</name><genre>Documentary Director</genre></performer>
+        <performer id="P02"><name>Marcus Thorne</name><genre>3D Animation</genre></performer>
+        <performer id="P03"><name>Sarah Jenkins</name><genre>Indie Drama</genre></performer>
+        <performer id="P04"><name>Kenji Sato</name><genre>2D Animation</genre></performer>
+        <performer id="P05"><name>Lucas Silva</name><genre>Short Film</genre></performer>
+        <performer id="P06"><name>Mia Wallace</name><genre>Experimental Art</genre></performer>
+        <performer id="P07"><name>Omar Farooq</name><genre>Documentary Director</genre></performer>
+        <performer id="P08"><name>Chloe Chen</name><genre>Stop Motion</genre></performer>
+        <performer id="P09"><name>David Kross</name><genre>Indie Comedy</genre></performer>
+        <performer id="P10"><name>Anya Petrov</name><genre>3D Animation</genre></performer>
+        <performer id="P11"><name>Liam O'Connor</name><genre>Short Film</genre></performer>
+        <performer id="P12"><name>Zoe Kravitz</name><genre>Experimental Art</genre></performer>
+        <performer id="P13"><name>Noah Miller</name><genre>Documentary Director</genre></performer>
+        <performer id="P14"><name>Emma Brown</name><genre>2D Animation</genre></performer>
+        <performer id="P15"><name>James Wilson</name><genre>Indie Drama</genre></performer>
+        <performer id="P16"><name>Sophia Lee</name><genre>Stop Motion</genre></performer>
+        <performer id="P17"><name>Oliver Davis</name><genre>Short Film</genre></performer>
+        <performer id="P18"><name>Isabella Garcia</name><genre>Experimental Art</genre></performer>
+        <performer id="P19"><name>William Taylor</name><genre>Documentary Director</genre></performer>
+        <performer id="P20"><name>Ava Martinez</name><genre>3D Animation</genre></performer>
+        <performer id="P21"><name>Benjamin Thomas</name><genre>Indie Comedy</genre></performer>
+        <performer id="P22"><name>Charlotte White</name><genre>2D Animation</genre></performer>
+        <performer id="P23"><name>Elijah Harris</name><genre>Short Film</genre></performer>
+        <performer id="P24"><name>Amelia Clark</name><genre>Stop Motion</genre></performer>
+        <performer id="P25"><name>Lucas Lewis</name><genre>Indie Drama</genre></performer>
+        <performer id="P26"><name>Harper Robinson</name><genre>Experimental Art</genre></performer>
+        <performer id="P27"><name>Mason Walker</name><genre>Documentary Director</genre></performer>
+        <performer id="P28"><name>Evelyn Hall</name><genre>3D Animation</genre></performer>
+        <performer id="P29"><name>Logan Allen</name><genre>Indie Comedy</genre></performer>
+        <performer id="P30"><name>Abigail Young</name><genre>2D Animation</genre></performer>
+        <performer id="P31"><name>Alexander King</name><genre>Short Film</genre></performer>
+        <performer id="P32"><name>Emily Wright</name><genre>Stop Motion</genre></performer>
+        <performer id="P33"><name>Ethan Scott</name><genre>Indie Drama</genre></performer>
+        <performer id="P34"><name>Elizabeth Green</name><genre>Experimental Art</genre></performer>
+        <performer id="P35"><name>Jacob Baker</name><genre>Documentary Director</genre></performer>
+        <performer id="P36"><name>Sofia Adams</name><genre>3D Animation</genre></performer>
+        <performer id="P37"><name>Michael Nelson</name><genre>Indie Comedy</genre></performer>
+        <performer id="P38"><name>Avery Carter</name><genre>2D Animation</genre></performer>
+        <performer id="P39"><name>Daniel Mitchell</name><genre>Short Film</genre></performer>
+        <performer id="P40"><name>Ella Perez</name><genre>Stop Motion</genre></performer>
+        <performer id="P41"><name>Henry Roberts</name><genre>Indie Drama</genre></performer>
+        <performer id="P42"><name>Grace Turner</name><genre>Experimental Art</genre></performer>
+        <performer id="P43"><name>Jackson Phillips</name><genre>Documentary Director</genre></performer>
+        <performer id="P44"><name>Victoria Campbell</name><genre>3D Animation</genre></performer>
+        <performer id="P45"><name>Sebastian Parker</name><genre>Indie Comedy</genre></performer>
+        <performer id="P46"><name>Chloe Evans</name><genre>2D Animation</genre></performer>
+        <performer id="P47"><name>Aiden Edwards</name><genre>Short Film</genre></performer>
+        <performer id="P48"><name>Penelope Collins</name><genre>Stop Motion</genre></performer>
+        <performer id="P49"><name>Matthew Stewart</name><genre>Indie Drama</genre></performer>
+        <performer id="P50"><name>Riley Sanchez</name><genre>Experimental Art</genre></performer>
+        <performer id="P51"><name>Samuel Morris</name><genre>Documentary Director</genre></performer>
+        <performer id="P52"><name>Layla Rogers</name><genre>3D Animation</genre></performer>
+        <performer id="P53"><name>David Reed</name><genre>Indie Comedy</genre></performer>
+        <performer id="P54"><name>Zoey Cook</name><genre>2D Animation</genre></performer>
+        <performer id="P55"><name>Carter Morgan</name><genre>Short Film</genre></performer>
+        <performer id="P56"><name>Mila Bell</name><genre>Stop Motion</genre></performer>
+        <performer id="P57"><name>Wyatt Murphy</name><genre>Indie Drama</genre></performer>
+        <performer id="P58"><name>Nora Bailey</name><genre>Experimental Art</genre></performer>
+        <performer id="P59"><name>Jayden Rivera</name><genre>Documentary Director</genre></performer>
+        <performer id="P60"><name>Lily Cooper</name><genre>3D Animation</genre></performer>
+    </performers>
+
+    <programme>
+        <event id="E01" day="2026-09-10" venue="V1" performer="P01" start="10:00" end="11:30"/>
+        <event id="E02" day="2026-09-10" venue="V2" performer="P02" start="10:15" end="11:45"/>
+        <event id="E03" day="2026-09-10" venue="V1" performer="P03" start="12:00" end="13:30"/>
+        <event id="E04" day="2026-09-10" venue="V2" performer="P04" start="12:15" end="13:45"/>
+        <event id="E05" day="2026-09-10" venue="V1" performer="P05" start="14:00" end="15:30"/>
+        <event id="E06" day="2026-09-10" venue="V2" performer="P06" start="14:15" end="15:45"/>
+        <event id="E07" day="2026-09-10" venue="V1" performer="P07" start="16:00" end="17:30"/>
+        <event id="E08" day="2026-09-10" venue="V2" performer="P08" start="16:15" end="17:45"/>
+        <event id="E09" day="2026-09-10" venue="V1" performer="P09" start="18:00" end="19:30"/>
+        <event id="E10" day="2026-09-10" venue="V2" performer="P10" start="18:15" end="19:45"/>
+        <event id="E11" day="2026-09-10" venue="V1" performer="P11" start="20:00" end="21:30"/>
+        <event id="E12" day="2026-09-10" venue="V2" performer="P12" start="20:15" end="21:45"/>
+        <event id="E13" day="2026-09-10" venue="V1" performer="P13" start="22:00" end="23:30"/>
+        <event id="E14" day="2026-09-10" venue="V2" performer="P14" start="22:15" end="23:45"/>
+        <event id="E15" day="2026-09-10" venue="V1" performer="P15" start="00:00" end="01:00"/>
+        <event id="E16" day="2026-09-10" venue="V2" performer="P16" start="00:15" end="01:15"/>
+        <event id="E17" day="2026-09-10" venue="V1" performer="P17" start="01:30" end="02:30"/>
+        <event id="E18" day="2026-09-10" venue="V2" performer="P18" start="01:45" end="02:45"/>
+        <event id="E19" day="2026-09-10" venue="V1" performer="P19" start="03:00" end="04:00"/>
+        <event id="E20" day="2026-09-10" venue="V2" performer="P20" start="03:15" end="04:15"/>
+
+        <event id="E21" day="2026-09-11" venue="V1" performer="P21" start="10:00" end="11:30"/>
+        <event id="E22" day="2026-09-11" venue="V2" performer="P22" start="10:15" end="11:45"/>
+        <event id="E23" day="2026-09-11" venue="V1" performer="P23" start="12:00" end="13:30"/>
+        <event id="E24" day="2026-09-11" venue="V2" performer="P24" start="12:15" end="13:45"/>
+        <event id="E25" day="2026-09-11" venue="V1" performer="P25" start="14:00" end="15:30"/>
+        <event id="E26" day="2026-09-11" venue="V2" performer="P26" start="14:15" end="15:45"/>
+        <event id="E27" day="2026-09-11" venue="V1" performer="P27" start="16:00" end="17:30"/>
+        <event id="E28" day="2026-09-11" venue="V2" performer="P28" start="16:15" end="17:45"/>
+        <event id="E29" day="2026-09-11" venue="V1" performer="P29" start="18:00" end="19:30"/>
+        <event id="E30" day="2026-09-11" venue="V2" performer="P30" start="18:15" end="19:45"/>
+        <event id="E31" day="2026-09-11" venue="V1" performer="P31" start="20:00" end="21:30"/>
+        <event id="E32" day="2026-09-11" venue="V2" performer="P32" start="20:15" end="21:45"/>
+        <event id="E33" day="2026-09-11" venue="V1" performer="P33" start="22:00" end="23:30"/>
+        <event id="E34" day="2026-09-11" venue="V2" performer="P34" start="22:15" end="23:45"/>
+        <event id="E35" day="2026-09-11" venue="V1" performer="P35" start="00:00" end="01:00"/>
+        <event id="E36" day="2026-09-11" venue="V2" performer="P36" start="00:15" end="01:15"/>
+        <event id="E37" day="2026-09-11" venue="V1" performer="P37" start="01:30" end="02:30"/>
+        <event id="E38" day="2026-09-11" venue="V2" performer="P38" start="01:45" end="02:45"/>
+        <event id="E39" day="2026-09-11" venue="V1" performer="P39" start="03:00" end="04:00"/>
+        <event id="E40" day="2026-09-11" venue="V2" performer="P40" start="03:15" end="04:15"/>
+
+        <event id="E41" day="2026-09-12" venue="V1" performer="P41" start="10:00" end="11:30"/>
+        <event id="E42" day="2026-09-12" venue="V2" performer="P42" start="10:15" end="11:45"/>
+        <event id="E43" day="2026-09-12" venue="V1" performer="P43" start="12:00" end="13:30"/>
+        <event id="E44" day="2026-09-12" venue="V2" performer="P44" start="12:15" end="13:45"/>
+        <event id="E45" day="2026-09-12" venue="V1" performer="P45" start="14:00" end="15:30"/>
+        <event id="E46" day="2026-09-12" venue="V2" performer="P46" start="14:15" end="15:45"/>
+        <event id="E47" day="2026-09-12" venue="V1" performer="P47" start="16:00" end="17:30"/>
+        <event id="E48" day="2026-09-12" venue="V2" performer="P48" start="16:15" end="17:45"/>
+        <event id="E49" day="2026-09-12" venue="V1" performer="P49" start="18:00" end="19:30"/>
+        <event id="E50" day="2026-09-12" venue="V2" performer="P50" start="18:15" end="19:45"/>
+        <event id="E51" day="2026-09-12" venue="V1" performer="P51" start="20:00" end="21:30"/>
+        <event id="E52" day="2026-09-12" venue="V2" performer="P52" start="20:15" end="21:45"/>
+        <event id="E53" day="2026-09-12" venue="V1" performer="P53" start="22:00" end="23:30"/>
+        <event id="E54" day="2026-09-12" venue="V2" performer="P54" start="22:15" end="23:45"/>
+        <event id="E55" day="2026-09-12" venue="V1" performer="P55" start="00:00" end="01:00"/>
+        <event id="E56" day="2026-09-12" venue="V2" performer="P56" start="00:15" end="01:15"/>
+        <event id="E57" day="2026-09-12" venue="V1" performer="P57" start="01:30" end="02:30"/>
+        <event id="E58" day="2026-09-12" venue="V2" performer="P58" start="01:45" end="02:45"/>
+        <event id="E59" day="2026-09-12" venue="V1" performer="P59" start="03:00" end="04:00"/>
+        <event id="E60" day="2026-09-12" venue="V2" performer="P60" start="03:15" end="04:15"/>
+    </programme>
+
+</festival>

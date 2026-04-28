@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "id": { "type": "string" },
+        "day": { "type": "string", "format": "date" },
+        "venueId": { "type": "string" },
+        "performerId": { "type": "string" },
+        "startTime": { "type": "string", "format": "time" },
+        "endTime": { "type": "string", "format": "time" }
+    },
+    "required": ["id", "day", "venueId", "performerId", "startTime", "endTime"]
+}

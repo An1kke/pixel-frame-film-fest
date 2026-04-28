@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="festival">
+        <xs:complexType>
+            <xs:sequence>
+                
+                <xs:element name="location">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="city" type="xs:string"/>
+                            <xs:element name="country" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="dateRange">
+                    <xs:complexType>
+                        <xs:attribute name="start" type="xs:date" use="required"/>
+                        <xs:attribute name="end" type="xs:date" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="description" type="xs:string"/>
+
+                <xs:element name="tickets">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="startingPrice" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="available" type="xs:boolean" use="required"/>
+                        <xs:attribute name="currency" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="links">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="website" type="xs:anyURI"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="venues">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="venue" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+
+                                        <!-- CUSTOM RESTRICTION: range — venue capacity must be between 10 and 5000 seats -->
+                                        <xs:element name="capacity">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="10"/>
+                                                    <xs:maxInclusive value="5000"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                        <!-- CUSTOM RESTRICTION: enum — only the two predefined venue types are allowed -->
+                                        <xs:element name="type">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Indoor Theater"/>
+                                                    <xs:enumeration value="Workshop &amp; Screening Hall"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+
+                                    <!-- CUSTOM RESTRICTION: pattern — venue ID must be V followed by one or more digits (e.g. V1, V2) -->
+                                    <xs:attribute name="id" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="V[0-9]+"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="performers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="performer" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="genre" type="xs:string"/>
+                                    </xs:sequence>
+
+                                    <!-- CUSTOM RESTRICTION: pattern — performer ID must be P followed by one or more digits (e.g. P01, P60) -->
+                                    <xs:attribute name="id" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="P[0-9]+"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="programme">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="event" maxOccurs="unbounded">
+                                <xs:complexType>
+
+                                    <!-- CUSTOM RESTRICTION: pattern — event ID must be E followed by one or more digits (e.g. E01, E60) -->
+                                    <xs:attribute name="id" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="E[0-9]+"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                    <xs:attribute name="day" type="xs:date" use="required"/>
+                                    <xs:attribute name="venue" type="xs:string" use="required"/>
+                                    <xs:attribute name="performer" type="xs:string" use="required"/>
+
+                                    <!-- CUSTOM RESTRICTION: pattern — start time must be in HH:MM format (00:00 to 23:59) -->
+                                    <xs:attribute name="start" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="([01][0-9]|2[0-3]):[0-5][0-9]"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                    <!-- CUSTOM RESTRICTION: pattern — end time must be in HH:MM format (00:00 to 23:59) -->
+                                    <xs:attribute name="end" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="([01][0-9]|2[0-3]):[0-5][0-9]"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="edition" type="xs:integer" use="required"/>
+            <xs:attribute name="year" type="xs:integer" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

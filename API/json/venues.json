@@ -1,0 +1,14 @@
+[
+    {
+        "id": "V1",
+        "name": "Lumiere Main Cinema",
+        "capacity": 800,
+        "type": "Indoor Theater"
+    },
+    {
+        "id": "V2",
+        "name": "Indie Projection Room",
+        "capacity": 250,
+        "type": "Workshop & Screening Hall"
+    }
+]

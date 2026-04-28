@@ -1,0 +1,23 @@
+{
+    "id": "PFFF2026",
+    "name": "Pixel & Frame Film Fest",
+    "edition": 1,
+    "year": 2026,
+    "description": "An international festival focused on modern cinema, digital creativity, and immersive storytelling.",
+    "location": {
+        "city": "Prague",
+        "country": "Czech Republic"
+    },
+    "dates": {
+        "start": "2026-09-10",
+        "end": "2026-09-12"
+    },
+    "tickets": {
+        "available": true,
+        "currency": "EUR",
+        "startingPrice": 25
+    },
+    "links": {
+        "website": "https://pixelframefest.cz"
+    }
+}

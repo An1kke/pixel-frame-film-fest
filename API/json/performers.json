@@ -1,0 +1,12 @@
+[
+    {
+        "id": "P01",
+        "name": "Elena Rostova",
+        "genre": "Documentary Director"
+    },
+    {
+        "id": "P02",
+        "name": "Marcus Thorne",
+        "genre": "3D Animation"
+    }
+]

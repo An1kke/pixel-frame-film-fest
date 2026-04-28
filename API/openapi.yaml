@@ -1,0 +1,157 @@
+openapi: 3.1.0
+info:
+  title: Pixel & Frame Film Fest API
+  version: 1.0.0
+servers:
+  - url: /api
+paths:
+  /festival:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './json-schema/festival-schema.json'
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+
+  /venues:
+    get:
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './json-schema/venues-schema.json'
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+
+  /venues/{id}:
+    get:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './json-schema/venue-detail-schema.json'
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+
+  /performers:
+    get:
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './json-schema/performers-schema.json'
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+
+  /performers/{id}:
+    get:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './json-schema/performer-detail-schema.json'
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+
+  /events:
+    get:
+      parameters:
+        - name: day
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: venueId
+          in: query
+          schema:
+            type: string
+        - name: performerId
+          in: query
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './json-schema/events-schema.json'
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
+
+  /events/{id}:
+    get:
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: './json-schema/event-detail-schema.json'
+        '400':
+          description: Bad Request
+        '404':
+          description: Not Found
